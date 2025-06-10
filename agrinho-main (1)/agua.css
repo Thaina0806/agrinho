@@ -1,0 +1,221 @@
+/* Estilos globais (você já tem isso em style.css, pode manter ou ajustar) */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #495057;
+    background-color: #e9f8f9; /* Um tom de azul/verde claro para remeter à água */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cabeçalho específico para a página de água */
+.cabecalho-agua {
+    background-color: #007bff; /* Azul vibrante */
+    color: #fff;
+    text-align: center;
+    padding: 60px 30px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho-agua h1 {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.05em;
+}
+
+.cabecalho-agua h3 {
+    color: #cce5ff; /* Azul mais claro para o subtítulo */
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Barra de Navegação (pode usar a mesma do style.css) */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Conteúdo Principal específico para a página de água */
+main.container-agua {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+section.agua-section {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e0f2f7; /* Um azul bem claro para separação */
+}
+
+section.agua-section:last-child {
+    border-bottom: none;
+}
+
+h2.agua-title {
+    font-size: 2.2rem;
+    color: #0056b3; /* Um tom mais escuro de azul */
+    margin-bottom: 1.5rem;
+}
+
+h3.agua-subtitle {
+    font-size: 1.8rem;
+    color: #00aaff; /* Um azul mais claro e vibrante */
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+p.agua-text {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.text-end.agua-italic {
+    text-align: right;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Imagens relacionadas à água */
+.img-fluid.agua-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Cards específicos para a página de água (se houver) */
+.card.agua-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card.agua-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top.agua-card-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    height: 220px;
+}
+
+.card-body.agua-card-body {
+    padding: 1.5rem;
+}
+
+.card-title.agua-card-title {
+    font-size: 1.25rem;
+    color: #0056b3;
+    margin-bottom: 0.75rem;
+}
+
+.card-text.agua-card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.btn-primary.agua-btn-primary,
+.btn-outline-info { /* Usei info para combinar com a temática da água */
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary.agua-btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary.agua-btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-info {
+    color: #00aaff;
+    border-color: #00aaff;
+}
+
+.btn-outline-info:hover {
+    background-color: #00aaff;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Rodapé (pode usar o mesmo do style.css ou criar um específico) */
+.footer-agua {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 4rem;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.footer-agua p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #cce5ff;
+}
+
+/* Estilos Responsivos (adapte conforme necessário) */
+@media (max-width: 768px) {
+    .cabecalho-agua {
+        padding: 40px 20px;
+    }
+
+    .cabecalho-agua h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-agua h3 {
+        font-size: 1.2rem;
+    }
+
+    h2.agua-title {
+        font-size: 2rem;
+    }
+
+    h3.agua-subtitle {
+        font-size: 1.6rem;
+    }
+}

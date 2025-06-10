@@ -1,0 +1,266 @@
+
+/* Estilos globais */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    line-height: 1.7;
+    color: #495057; /* Tom de cinza mais suave para o texto */
+    background-color: #f4f6f8; /* Fundo levemente texturizado */
+    -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte em navegadores WebKit */
+    -moz-osx-font-smoothing: grayscale; /* Melhora a renderização da fonte no Firefox */
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #343a40; /* Preto mais escuro */
+    color: #fff;
+    text-align: center;
+    padding: 60px 30px; /* Mais espaçamento interno */
+    margin-bottom: 2rem; /* Espaçamento abaixo do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.cabecalho h1 {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.05em; /* Pequeno ajuste no espaçamento entre letras */
+}
+
+.cabecalho h3 {
+    color: #ffc107; /* Amarelo vibrante para destaque */
+    font-size: 1.5rem;
+    font-weight: 300; /* Mais leve */
+}
+
+/* Barra de Navegação */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra suave na navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Conteúdo Principal */
+main.container {
+    padding: 30px;
+    background-color: #fff; /* Fundo branco para o conteúdo principal */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+section {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e9ecef; /* Separador sutil entre as seções */
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #28a745; /* Verde para títulos secundários */
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.text-end {
+    text-align: right;
+    font-style: italic; /* Adicionado um toque de estilo */
+    color: #6c757d;
+}
+
+/* Imagens */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Sombra suave nas imagens */
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out; /* Efeito de hover suave */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva o card no hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    height: 220px; /* Altura fixa para consistência */
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #343a40;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.btn-primary,
+.btn-outline-success {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Carrossel */
+.carousel {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* Garante que as bordas arredondadas funcionem corretamente */
+}
+
+.carousel-inner {
+    border-radius: 8px;
+}
+
+.img-slide {
+    max-height: 550px; /* Aumentei um pouco mais a altura */
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente para melhor visibilidade */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    width: 5%; /* Reduzi a largura dos controles */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.7); /* Ícones mais visíveis */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 4rem;
+    border-radius: 8px 8px 0 0; /* Arredondamento apenas na parte superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.08); /* Sombra sutil na parte superior */
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #adb5bd; /* Tom de cinza mais claro para o texto do rodapé */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 40px 20px;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho h3 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .img-card {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo em telas menores */
+    }
+
+    .img-slide {
+        max-height: 400px;
+    }
+}

@@ -1,0 +1,221 @@
+/* Estilos globais (você já tem isso em style.css, pode manter ou ajustar) */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #495057;
+    background-color: #f0fff0; /* Um tom de verde bem claro para remeter à produção */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cabeçalho específico para a página de produção */
+.cabecalho-producao {
+    background-color: #28a745; /* Verde vibrante */
+    color: #fff;
+    text-align: center;
+    padding: 60px 30px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho-producao h1 {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.05em;
+}
+
+.cabecalho-producao h3 {
+    color: #d4edda; /* Verde mais claro para o subtítulo */
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Barra de Navegação (pode usar a mesma do style.css) */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Conteúdo Principal específico para a página de produção */
+main.container-producao {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+section.producao-section {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e3fcec; /* Um verde bem claro para separação */
+}
+
+section.producao-section:last-child {
+    border-bottom: none;
+}
+
+h2.producao-title {
+    font-size: 2.2rem;
+    color: #1e7e34; /* Um tom mais escuro de verde */
+    margin-bottom: 1.5rem;
+}
+
+h3.producao-subtitle {
+    font-size: 1.8rem;
+    color: #28a745; /* O verde principal */
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+p.producao-text {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.text-end.producao-italic {
+    text-align: right;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Imagens relacionadas à produção */
+.img-fluid.producao-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Cards específicos para a página de produção (se houver) */
+.card.producao-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card.producao-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top.producao-card-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    height: 220px;
+}
+
+.card-body.producao-card-body {
+    padding: 1.5rem;
+}
+
+.card-title.producao-card-title {
+    font-size: 1.25rem;
+    color: #1e7e34;
+    margin-bottom: 0.75rem;
+}
+
+.card-text.producao-card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.btn-primary.producao-btn-primary,
+.btn-outline-success.producao-btn-outline-success {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary.producao-btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary.producao-btn-primary:hover {
+    background-color: #1e7e34;
+    border-color: #1e7e34;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-success.producao-btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success.producao-btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Rodapé (pode usar o mesmo do style.css ou criar um específico) */
+.footer-producao {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 4rem;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.footer-producao p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #d4edda;
+}
+
+/* Estilos Responsivos (adapte conforme necessário) */
+@media (max-width: 768px) {
+    .cabecalho-producao {
+        padding: 40px 20px;
+    }
+
+    .cabecalho-producao h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-producao h3 {
+        font-size: 1.2rem;
+    }
+
+    h2.producao-title {
+        font-size: 2rem;
+    }
+
+    h3.producao-subtitle {
+        font-size: 1.6rem;
+    }
+}
